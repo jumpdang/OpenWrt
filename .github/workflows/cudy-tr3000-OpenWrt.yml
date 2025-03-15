@@ -14,7 +14,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: ROOTFS_MINI
+  FIRMWARE_TAG: Cudy-Tr3000
   OPENWRT_RELEASE: true
   OPENWRT_TAG: cudy-tr3000
   TZ: Asia/Shanghai
@@ -183,9 +183,8 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ${{ env.FIRMWARE_PATH }}/*
         body: |
-          **This is Temporary Firmware for Armvirt 64**
+          **This is Temporary Firmware for cudy-tr3000**
           ### 📒 固件信息
-          - 🚀 成品固件
           - 💻 平台架构: ${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }} (精简版临时固件)
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
@@ -265,7 +264,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
         body: |
-          **This is OpenWrt Firmware for Armvirt 64**
+          **This is OpenWrt Firmware for cudy-tr3000**
           ### 📒 固件信息
           - 🚀 精简版，主打科学上网适合养老
           - 💻 平台架构: ${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}
