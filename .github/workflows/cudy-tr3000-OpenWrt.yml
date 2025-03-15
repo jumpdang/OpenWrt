@@ -1,4 +1,4 @@
-name: ARMv8 Mini OpenWrt
+name: cudy-tr3000-OpenWrt
 
 on:
   workflow_dispatch:
