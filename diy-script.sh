@@ -40,7 +40,7 @@ git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-a
 # git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
-git_sparse_clone main https://github.com/sbwml/luci-app-openlist2 package/luci-app-openlist2
+git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/luci-app-openlist2
 # git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
 
 # 科学上网插件
